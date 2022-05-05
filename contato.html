@@ -16,6 +16,67 @@
      </nav>
           <img src="IMG/logo.img" alt="" width="300px">
      </center>
+     
+    <form action="enviaemail.cs" method="post">
+      <p>
+           <label>Nome:</label>
+           <input type="text" name="nome" required placeholder="Informe seu nome completo">
+      </p>
+      <p>
+           <label>E-mail:</label>
+           <input type="email" name="email" required placeholder="Informe seu email">
+      </p>
+      <p>
+           <select name="estado" id="">
+               <option value="">Selecione o Estado</option>
+               <option value="SC">Santa Catarina</option>
+               <option value="PR">Paraná</option>
+               <option value="RS">Rio Grande do Sul</option>
+           </select>
+           <select name="cidade" id="">
+                <option value="BNU">Blumenau</option>
+                <option value="ITJ">Itajaí</option>
+           </select>
+      </p>
+      <p>    
+           <input type="datetime-local" name="data">
+
+           <label>Sexo:</label>
+           <span>
+                Masculino <input type="radio" name="sexo" value="M">
+                Feminino <input type="radio" name="sexo" value="F">
+           </span>
+      </p>
+
+
+      <p>
+           <label>Comidas:</label>
+           <input type="checkbox" name="comida" value="Lasanha">Lasanha
+           <input type="checkbox" name="comida" value="Pizza">Pizza
+           <input type="checkbox" name="comida" value="Arroz">Arroz
+           <input type="checkbox" name="comida" value="Feijão">Feijão
+
+      </p>
+
+
+      <p>
+           <label>Senha:</label>
+           <input type="password" name="senha" required placeholder="Informe sua senha">
+      </p> 
+      <p>
+           
+           <button type="submit">Enviar</button>
+           <input type="reset" name="enviar" value="Limpar">
+      </p>
+
+
+    </form>
+
+
+
+
+
+
      <center>
          <nav>
              <a href="https://api.whatsapp.com/send?phone=554798390728">Para contato em Whatsapp Clique aqui!</a>
