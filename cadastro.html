@@ -21,7 +21,7 @@
       <font face="arial" color="black" size="7">Cadastro</font>
      
      
-    <form action="enviaemail.cs" method="post">
+    <form action="enviaemail.cs" method="post" autocomplete="on" enctype="multipart/form-data">
       <p>
            <label><b>Nome:</b></label>
            <input type="nome" name="nome" required placeholder="Informe seu nome completo">
@@ -53,7 +53,7 @@
       <p>
            <select name="estado" id="">
                <option value="">Selecione o Estado</option>
-               <option value="SC">Santa Catarina</option>
+               <option value="SC" selected>Santa Catarina</option>
                <option value="PR">Paraná</option>
                <option value="RS">Rio Grande do Sul</option>
            </select>
@@ -64,23 +64,32 @@
       </p>
       <p>    
            <input type="datetime-local" name="data">
-
+           
+           <label>Foto</label>
+           <input type="file" name="foto" multiple>
+           
+           
+           <input type="hidden" name="codigoIbge" value="1058483">
+           
+           <button type="submit">Enviar arquivo</button>
+           
            <label><b>Sexo:</b></label>
            <span>
                 <b>Masculino</b> <input type="radio" name="sexo" value="M">
                 <b>Feminino</b> <input type="radio" name="sexo" value="F">
-           </span>
-      </p>
-
-
-      <p>
-           <label><b>Nacionalidade:</b></label>
-           <input type="checkbox" name="nacionalidade" value="Brasileiro">Brasileiro
-           <input type="checkbox" name="nacionalidade" value="Outra">Outra
-         
-
-      </p>
-
+               </span>
+          </p>
+          
+          
+          <p>
+               <label><b>Nacionalidade:</b></label>
+               <input type="checkbox" name="nacionalidade" checked value="Brasileiro">Brasileiro
+               <input type="checkbox" name="nacionalidade" value="Outra">Outra
+               
+               
+          </p>
+          <textarea name="mensagem" cols="20" rows="10"></textarea>
+     
 
       
       <p>
