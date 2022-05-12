@@ -1,24 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700;800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
+}
+
+*{
+    font-family: 'Dosis', sans-serif;
+}
+
+nav a{
+    display: block;
+    width: auto;
+    height: 56px;
+    padding: 4px;
+    float: left;
+    line-height: 53px;
+    color: black;
+    text-decoration: none;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-seletpor{
-    propriedade: valor;
+/*regras dos conteúdos*/
+main{
+    padding: 80px, 10px;
 }
+
